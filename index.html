@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Stepper Form</title>
+</head>
+<body>
+  
+  <main>
+
+    <div class="box">
+
+      <div class="steps">
+        <div class="stepItems"><p class="active">1</p></div>
+        <div class="stepItems"><p>2</p></div>
+        <div class="stepItems"><p>3</p></div>
+      </div>
+
+      <!-- Step 1 -->
+      <form id="content1" class="content">
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text">
+      </form>
+      <!-- Step 2 -->
+      <form id="content2" class="content noDisplay">
+        <label for="username">Username</label>
+        <input id="username" type="text">
+      </form>
+      <!-- Step 3 -->
+      <form id="content3" class="content noDisplay">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+      </form>
+
+      <div class="buttons">
+        <button id="js-backButton" class="noDisplay">Back</button>
+        <button id="js-nextButton">Next</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="logic.js"></script>
+</body>
+</html>
